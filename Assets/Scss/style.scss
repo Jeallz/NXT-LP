@@ -515,6 +515,14 @@ footer {
     }
 }
 
+@media(max-width: 1000px) {
+    main {
+        .cards {
+            padding: 0 8vh 22vh 8vh;
+        }
+    }
+}
+
 @media(max-width: 820px) {
     header {
         .logo{
@@ -540,6 +548,50 @@ footer {
             }
         }
     }
+
+    main {
+        .cards {
+            display: none;
+        }
+
+        .about {
+            height: auto;
+            flex-direction: column;
+            padding: 10vh 0 10vh 0;
+            gap: 15vh;
+            width: 100%;
+
+            .img {
+                width: 100%;
+                display: grid;
+                place-items: center;
+                padding: 0;
+            } .text {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 5vh 0 5vh;
+            }
+        } .info {
+            height: auto;
+            flex-direction: column-reverse;
+            padding: 10vh 0 10vh 0;
+            gap: 15vh;
+            width: 100%;
+
+            .img {
+                width: 100%;
+                display: grid;
+                place-items: center;
+                padding: 0;
+            } .text {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 5vh 0 5vh;
+            }
+        }
+    }
 }
 
 @media(max-width: 530px) {
@@ -548,6 +600,24 @@ footer {
             width: 40%;
         } .links {
             width: 60%;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    main {
+        .info {
+            .img {
+                img {
+                    width: 330px;
+                }
+            }
+        } .about {
+            .img {
+                img {
+                    width: 300px;
+                }
+            }
         }
     }
 }
