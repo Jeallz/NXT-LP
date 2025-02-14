@@ -273,7 +273,7 @@ main .class1 {
 main .portfolio {
   width: auto;
   height: auto;
-  display: flex;
+  display: none;
   align-items: center;
   padding: 5vh 0 5vh 0;
   position: relative;
