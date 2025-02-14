@@ -515,10 +515,34 @@ footer {
     }
 }
 
+@media(max-width: 1150px) {
+    main {
+        .discord {
+            width: 100% !important;
+            display: grid;
+            place-items: center;
+
+            .box {
+                width: 40%;
+            }
+        }
+    }
+}
+
 @media(max-width: 1000px) {
     main {
         .cards {
             padding: 0 8vh 22vh 8vh;
+        }
+    }
+}
+
+@media(max-width: 870px) {
+    main {
+        .discord {
+            .box {
+                width: 65%;
+            }
         }
     }
 }
@@ -594,6 +618,22 @@ footer {
     }
 }
 
+@media(max-width: 700px) {
+    footer {
+        .logo {
+            img {
+                width: 50px;
+            }
+        } .cop {
+            width: 50%;
+
+            h2 {
+                font-size: 13pt;
+            }
+        }
+    }
+}
+
 @media(max-width: 530px) {
     header {
         .logo {
@@ -602,20 +642,127 @@ footer {
             width: 60%;
         }
     }
+
+    main {
+        .discord {
+            .box {
+                width: 75%;
+            }
+        }
+    }
 }
 
 @media(max-width: 500px) {
     main {
+        .banner {
+            .glass {
+                .box {
+                    padding: 0 4vh 0 4vh !important;
+                    img {
+                        width: 150px;
+                    } #txt1 { // maior
+                        font-size: 13pt;
+                    } #txt2 { // menor
+                        font-size: 10pt;
+                    }
+                }
+            }
+        }
         .info {
             .img {
                 img {
-                    width: 330px;
+                    width: 300px;
+                }
+            } .text {
+                h1 {
+                    font-size: 18pt;
+                } h4 {
+                    font-size: 14pt;
+                } p {
+                    font-size: 12pt;
                 }
             }
         } .about {
             .img {
                 img {
-                    width: 300px;
+                    width: 280px;
+                }
+            } .text {
+                h2 {
+                    font-size: 18pt;
+                } p {
+                    font-size: 12pt;
+
+                    #func {
+                        font-size: 13pt;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: auto;
+        padding: 2vh 0 2vh 0;
+        flex-direction: column;
+
+        .logo {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            height: 8vh;
+            padding: 0 0 2vh 0;
+
+            img {
+                width: 50px;
+            }
+        } .cop {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-size: 10pt;
+            }
+        }
+    }
+}
+
+@media(max-width: 470px) {
+    main {
+        .banner {
+            height: 60vh;
+        }
+
+        .discord {
+            .box {
+                padding: 4vh 2vh 4vh 2vh;
+                img {
+                    width: 100px;
+                }
+
+                h2 {
+                    font-size: 13pt;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    main {
+        .banner {
+            .glass {
+                .box {
+                    padding: 0 10vh 0 10vh !important;
+                    img {
+                        width: 100px;
+                    } #txt1 { // maior
+                        font-size: 10pt;
+                    } #txt2 { // menor
+                        font-size: 8pt;
+                    }
                 }
             }
         }
@@ -631,6 +778,14 @@ footer {
 
             .header-menu-h {
                 padding: 0 0 0 10vh;
+            }
+        }
+    }
+
+    main {
+        .discord {
+            .box {
+                width: 80%;
             }
         }
     }
